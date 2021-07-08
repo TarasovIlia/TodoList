@@ -41,9 +41,11 @@
 
 
 .todoComponent p {
-    padding: 15px 0px 0px 50px;
+    margin-left: 50px;
+    padding-top: 15px;
     float: left;
     font-size: 18px;
+
 }
 
 .todoComponent input {
@@ -53,6 +55,7 @@
     float: left;
 
     margin: 15px 0px 0px 20px;
+
 }
 
 .todoComponent p:last-child {
