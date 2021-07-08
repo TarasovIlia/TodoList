@@ -1,4 +1,4 @@
-const todoData = [
+const TodoData = [
     {
     id: 1,
     text: "Take out the trash",
@@ -26,3 +26,5 @@ const todoData = [
     text: "Catch up on Arrested Development",completed: false
     }
     ]
+
+export default TodoData
