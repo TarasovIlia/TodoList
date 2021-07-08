@@ -3,18 +3,19 @@ import React from 'react'
 
 
 
-function TodoList(props) {
-    console.log(props)
+class TodoList extends React.Component {
+    render() {
 
-    return (
-        <div className="TodoList">
-            <div className='todoComponent'>
-                <input type="checkbox" checked={props.item.completed}/>
-                <p style={{display : !props.item.header && 'none'}}>{props.item.header}</p>
-                <p style={{paddingLeft : !props.item.header && '50px', position : !props.item.header && 'relative'}}>{props.item.text}</p>
+        return (
+            <div className="TodoList">
+                <div className='todoComponent'>
+                    <input type="checkbox" checked={this.props.item.completed}/>
+                    <p style={{display : !this.props.item.header && 'none'}}>{this.props.item.header}</p>
+                    <p style={{paddingLeft : !this.props.item.header && '50px', position : !this.props.item.header && 'relative'}}>{this.props.item.text}</p>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default TodoList

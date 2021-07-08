@@ -1,6 +1,7 @@
 import React from 'react'
 import TodoList from './TodoList'
 import './css/content.css'
+import reactDom from 'react-dom'
 // import todoData from './data/todo'
 
 const todoData = [
@@ -34,16 +35,18 @@ const todoData = [
     
 
 
+class MainContent extends React.Component {
 
-function MainContent () {
+    render () {
 
-// const todo = todoData.map(item => <TodoList header={item.header} text={item.text} key={item.key} completed={item.completed} />)
-const todo = todoData.map(item => <TodoList key={item.key} item={item} />)
-    return (
-        <div className='wrapper'>
-           {todo}
-        </div>
-    )
+        // const todo = todoData.map(item => <TodoList header={item.header} text={item.text} key={item.key} completed={item.completed} />)
+        const todo = todoData.map(item => <TodoList key={item.key} item={item} />)
+            return (
+                <div className='wrapper'>
+                {todo}
+                </div>
+            )
+    }
 }
 
 export default MainContent
