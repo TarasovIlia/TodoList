@@ -1,0 +1,68 @@
+.wrapper {
+    width: 80%;
+    height: 500px;
+    border-radius: 12px;
+    margin: 70px auto 0px auto;
+
+    box-shadow: 3px 2px 10px 0px  rgb(27, 27, 27);
+    transition-duration: 0.6s;
+
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.wrapper:hover {
+    transition-duration: 0.6s;
+    box-shadow: 7px 5px 16px 0px  rgb(27, 27, 27);
+}
+
+.TodoList {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    padding: 10px 0px;
+}
+
+.todoComponent {
+    width: 100%;
+    height: 55px;
+    margin: 0px 0px 26px 0px;
+
+    border-radius: 12px;
+    transition-duration: 0.7s;
+    box-shadow: 0px 2px 4px 0px  rgb(27, 27, 27);
+
+    cursor: pointer;
+}
+
+.todoComponent:hover {
+    box-shadow: 7px 5px 16px 0px  rgb(27, 27, 27);
+    transition-duration: 0.3s;
+}
+
+
+.todoComponent p {
+    padding: 15px 0px 0px 50px;
+    float: left;
+    font-size: 18px;
+}
+
+.todoComponent input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: left;
+
+    margin: 15px 0px 0px 20px;
+}
+
+.todoComponent p:last-child {
+    color: #424242;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 320px;
+    position: absolute;
+}
